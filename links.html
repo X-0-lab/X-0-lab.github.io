@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+    
+
+.button {
+  
+  color: green;
+  
+  padding: 16px;
+  
+  font-size: 16px;
+  
+  border: none;
+  
+  cursor: pointer;
+  
+}
+
+.button:hover {
+    
+  background-color: green;
+  
+}
+
+.dropdown {
+    
+  position: relative;
+  
+  display: inline-block;
+  
+}
+
+.dropdown-content {
+    
+  display: none;
+  
+  position: absolute;
+  
+  background-color: green;
+  
+  min-width: 160px;
+  
+  overflow: auto;
+  
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  
+  z-index: 1;
+}
+
+.dropdown-content a {
+    
+  color: white;
+  
+  padding: 12px 16px;
+  
+  text-decoration: none;
+  
+  display: block;
+  
+}
+
+.dropdown a:hover {background-color: green;}
+
+.show {display: block;}
+
+</style>
+
+</head>
+
+<body>
+    
+
+<h2>Random Links</h2>
+
+<div class="Random Links">
+    
+  <button onclick="myFunction()" class="button">Random Links</button>
+  
+  <div id="Random Links" class="dropdown-content">
+      
+    <a href="$duck">duck</a>
+    
+    <a href="$moodle">moodle</a>
+    
+    <a href="$google">google</a>
+    
+    <a href="$youtube">youtube </a>
+    
+  </div>
+  
+</div>
+
+<script>
+
+function myFunction() {
+    
+  document.getElementById("Random Links").classList.toggle("show");
+  
+}
+
+
+window.onclick = function(event) {
+    
+  if (!event.target.matches('.button')) {
+      
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    
+    var i;
+    
+    for (i = 0; i < dropdowns.length; i++) {
+        
+      var openDropdown = dropdowns[i];
+      
+      if (openDropdown.classList.contains('show')) {
+          
+        openDropdown.classList.remove('show');
+        
+      }
+      
+    }
+    
+  }
+  
+}
+
+</script>
+
+</body>
+
+</html>
