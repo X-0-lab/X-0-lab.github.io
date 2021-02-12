@@ -3,59 +3,155 @@
     
 <head>
     
-<title>Welcome!</title> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
- <style type="text/css" media="all">
+<style>
     
-    
-              
+    body{ 
+        
+        background-color: green;
+        
+        background-image:url("RockySeal.jpg");
                 
-                body{
+        background-attachment: fixed;
+                  
+        background-position: center;
+      
+        background-size: contain;
+      
+    }
 
-                  
-                  background-color: green;
-                  
-                }
-                
-                h2 {text-align: center;}
-                
-                form {text-align: center;}
+.button {
+  
+  color: green;
+  
+  padding: 16px;
+  
+  font-size: 16px;
+  
+  border: none;
+  
+  cursor: pointer;
+  
+}
+
+.button:hover {
     
+  background-color: green;
+  
+}
+
+.dropdown {
     
-    </style>
+  position: relative;
+  
+  display: inline-block;
+  
+}
+
+.dropdown-content {
     
+  display: none;
+  
+  position: absolute;
+  
+  background-color: green;
+  
+  min-width: 160px;
+  
+  overflow: auto;
+  
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  
+  z-index: 1;
+}
+
+.dropdown-content a {
+    
+  color: white;
+  
+  padding: 12px 16px;
+  
+  text-decoration: none;
+  
+  display: block;
+  
+}
+
+.dropdown a:hover {background-color: green;}
+
+.show {display: block;}
+
+</style>
+
 </head>
-
-
 
 <body>
     
-     <p id="clicker" style="text-align: middle;"></p>
+
+<h2>Random Links</h2>
+
+<div class="Random Links">
+    
+  <button onclick="myFunction()" class="button">Random Links</button>
+ 
+  
+  <div id="Random Links" class="dropdown-content">
+      
+    <a href="http://www.duckduckgo.com">Duck</a>
+    
+    <a href="https://www.rocky.edu/resources/student-tools">Rocky Student Tools</a>
+    
+    <a href="http://www.google.com">Google</a>
+    
+    <a href="http://www.youtube.com">Youtube </a>
+    
+     <a href="http://www.popcornflix.com">PopcornFlix </a>
      
-     <br>
-     
-     <div>
-   
-   
-<h2>Select your Classification:</h2>
-
-<form action = "links.html">
-    <input type="submit" name="usertype" value="student">
+    <a href="https://www.minecraft.net/en-us/"> minecraft</a>
     
-    <br>
-</form>
-
-    <form action="https://theuselessweb.com">
+    <a href="https://www.crazygames.com/game/cs-online"> CS 1.6</a>
     
-    <input type="submit" name="usertype" value="Staff">
-    </br><br>
+    <a href="http://cs.rocky.edu/"> CSC website</a>
     
-    </form>
-    
-
-
-
+  </div>
+  
 </div>
+
+<script>
+
+function myFunction() {
+    
+  document.getElementById("Random Links").classList.toggle("show");
+  
+}
+
+
+window.onclick = function(event) {
+    
+  if (!event.target.matches('.button')) {
+      
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    
+    var i;
+    
+    for (i = 0; i < dropdowns.length; i++) {
+        
+      var openDropdown = dropdowns[i];
+      
+      if (openDropdown.classList.contains('show')) {
+          
+        openDropdown.classList.remove('show');
+        
+      }
+      
+    }
+    
+  }
+  
+}
+
+</script>
 
 </body>
 
