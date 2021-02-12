@@ -3,133 +3,59 @@
     
 <head>
     
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Welcome!</title> 
 
-<style>
+ <style type="text/css" media="all">
     
-
-.button {
-  
-  color: green;
-  
-  padding: 16px;
-  
-  font-size: 16px;
-  
-  border: none;
-  
-  cursor: pointer;
-  
-}
-
-.button:hover {
     
-  background-color: green;
-  
-}
+              
+                
+                body{
 
-.dropdown {
+                  
+                  background-color: green;
+                  
+                }
+                
+                h2 {text-align: center;}
+                
+                form {text-align: center;}
     
-  position: relative;
-  
-  display: inline-block;
-  
-}
-
-.dropdown-content {
     
-  display: none;
-  
-  position: absolute;
-  
-  background-color: green;
-  
-  min-width: 160px;
-  
-  overflow: auto;
-  
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  
-  z-index: 1;
-}
-
-.dropdown-content a {
+    </style>
     
-  color: white;
-  
-  padding: 12px 16px;
-  
-  text-decoration: none;
-  
-  display: block;
-  
-}
-
-.dropdown a:hover {background-color: green;}
-
-.show {display: block;}
-
-</style>
-
 </head>
+
+
 
 <body>
     
+     <p id="clicker" style="text-align: middle;"></p>
+     
+     <br>
+     
+     <div>
+   
+   
+<h2>Select your Classification:</h2>
 
-<h2>Random Links</h2>
+<form action = "links.html">
+    <input type="submit" name="usertype" value="student">
+    
+    <br>
+</form>
 
-<div class="Random Links">
+    <form action="https://theuselessweb.com">
     
-  <button onclick="myFunction()" class="button">Random Links</button>
-  
-  <div id="Random Links" class="dropdown-content">
-      
-    <a href="$duck">duck</a>
+    <input type="submit" name="usertype" value="Staff">
+    </br><br>
     
-    <a href="$moodle">moodle</a>
+    </form>
     
-    <a href="$google">google</a>
-    
-    <a href="$youtube">youtube </a>
-    
-  </div>
-  
+
+
+
 </div>
-
-<script>
-
-function myFunction() {
-    
-  document.getElementById("Random Links").classList.toggle("show");
-  
-}
-
-
-window.onclick = function(event) {
-    
-  if (!event.target.matches('.button')) {
-      
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    
-    var i;
-    
-    for (i = 0; i < dropdowns.length; i++) {
-        
-      var openDropdown = dropdowns[i];
-      
-      if (openDropdown.classList.contains('show')) {
-          
-        openDropdown.classList.remove('show');
-        
-      }
-      
-    }
-    
-  }
-  
-}
-
-</script>
 
 </body>
 
