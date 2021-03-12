@@ -1,0 +1,474 @@
+<!doctype html>
+
+<html>
+<body>
+
+
+<div x-data ="{stuff: [false,false,false,false,false,false,false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false ,false, false ,false, false, false, false, false ,false, false, false, false,false, false, false, false, false, false, false,
+false ,false, false, false, false,false, false, false, false, false, false, false,
+false ,false, false, false, false,false, false, false, false, false, false, false,
+false ,false, false, false, false,false, false, false, false]}">
+  
+ 
+   
+   <head>
+   
+   
+   </head>
+  <h1 style="color:green" style="text-align: center"><b>C-172 CESSNA SKYHAWK</br>
+   Quick Reference Normal Operating Checklist</h1>
+   <p style="color:green">For use only with an approved Cessna checklist</p>
+  
+    
+  
+  <h1 style="color: blue">Before Engine Start</h1>
+    <div x-show="!stuff[0]">
+      <input x-model="stuff[0]" type="checkbox"> 1. Preflight: Complete 
+  </div>
+  
+  <div x-show="!stuff[1]">
+      <input x-model="stuff[1]" type="checkbox">2. Fuel Drain Tool: Stow
+  </div>
+   
+  <div x-show="!stuff[2]">
+     <input x-model="stuff[2]" type="checkbox"> 3. Passenger Briefing: Complete
+  </div>
+  
+  <div x-show="!stuff[3]">
+    <input x-model="stuff[3]" type="checkbox">4. Seats: Adjust and Lock
+  </div>
+
+  <div x-show="!stuff[4]">
+    <input x-model="stuff[4]" type="checkbox">5. Seat Belt & Harness: On
+  </div>
+
+  <div x-show="!stuff[5]">
+    <input x-model="stuff[5]" type="checkbox">6. Brakes: Set
+  </div>
+  
+   <div x-show="!stuff[6]">
+    <input x-model="stuff[6]" type="checkbox">7. Avionics Master: Off
+  </div>
+  
+   <div x-show="!stuff[7]">
+    <input x-model="stuff[7]" type="checkbox">8. Circut Breakers: In
+  </div>
+  
+   <div x-show="!stuff[8]">
+    <input x-model="stuff[8]" type="checkbox">9. Fuel Selector: On Both
+  </div>
+  
+   <div x-show="!stuff[9]">
+    <input x-model="stuff[9]" type="checkbox">10. Beacon Light: On
+  </div>
+
+  <br/> 
+  <br/>
+  
+  <h1 style="color: blue"> Engine Start</h1>
+   <div x-show="!stuff[10]">
+    <input x-model="stuff[10]" type="checkbox">Mixture: Rich
+  </div>
+  
+   <div x-show="!stuff[11]">
+    <input x-model="stuff[11]" type="checkbox">Carburetor Heat: Cold
+  </div>
+  
+   <div x-show="!stuff[12]">
+    <input x-model="stuff[12]" type="checkbox">Prime: 2-6 strokes if cold
+  </div>
+  
+   <div x-show="!stuff[13]">
+    <input x-model="stuff[13]" type="checkbox">Master: On
+  </div>
+  
+   <div x-show="!stuff[14]">
+    <input x-model="stuff[14]" type="checkbox">Throttle: Open 1/4 Inch
+  </div>
+  
+   <div x-show="!stuff[15]">
+    <input x-model="stuff[15]" type="checkbox">Propeller Area: Clear
+  </div>
+  
+   <div x-show="!stuff[16]">
+    <input x-model="stuff[16]" type="checkbox">Ignition: To Start
+  </div>
+  
+   <div x-show="!stuff[17]">
+    <input x-model="stuff[17]" type="checkbox">Engine RPM: 800
+  </div>
+  
+   <div x-show="!stuff[18]">
+    <input x-model="stuff[18]" type="checkbox">Oil Pressure: In Green
+  </div>
+  
+  
+  
+  <h4 style="color: red">
+   Note: Oil pressure should be in<br/>    
+    green arc within 30 seconds<br/> 
+    summer, 60 seconds winter.
+    
+   
+  </h4>
+  
+  <br>
+  <br>
+  
+  <h1 style="color: blue"> Before Taxi</h1>
+  
+   <div x-show="!stuff[19]">
+    <input x-model="stuff[19]" type="checkbox">Flaps: up
+  </div>
+  
+   <div x-show="!stuff[20]">
+    <input x-model="stuff[20]" type="checkbox">Avionics Master: On
+  </div>
+  
+   <div x-show="!stuff[21]">
+    <input x-model="stuff[21]" type="checkbox">NAV lights: (Sunset-Sunrise)ON  
+</div>
+  
+   <div x-show="!stuff[22]">
+    <input x-model="stuff[22]" type="checkbox">Transponder: Select for taxiing
+  </div>
+  
+   <div x-show="!stuff[23]">
+    <input x-model="stuff[23]" type="checkbox">ATIS: Listen and Copy
+  </div>
+  
+   <div x-show="!stuff[24]">
+    <input x-model="stuff[24]" type="checkbox">Brakes: Realease and Test
+  </div>
+  
+    <div x-show="!stuff[25]">
+    <input x-model="stuff[25]" type="checkbox">Commnication: GRD or CTAF
+  </div>
+  <br/>
+  <br/>
+  
+  <h1 style="color: blue">Before TakeOff(RunUp)</h1>
+  
+    
+    <div x-show="!stuff[27]">
+    <input x-model="stuff[27]" type="checkbox">Brakes: Set
+  </div>
+    
+    <div x-show="!stuff[28]">
+    <input x-model="stuff[28]" 
+           type="checkbox">Flight Instruments: Set
+  </div>
+    
+    <div x-show="!stuff[29]">
+    <input x-model="stuff[29]" type="checkbox">Engine Instruments: In Green
+  </div>
+    
+    <div x-show="!stuff[30]">
+    <input x-model="stuff[30]" type="checkbox">Avionics: Set Properly for Flight
+  </div>
+    
+    <div x-show="!stuff[31]">
+    <input x-model="stuff[31]" type="checkbox">Mixture: Rich below 3000'
+  </div>
+    
+    <div x-show="!stuff[32]">
+    <input x-model="stuff[32]" type="checkbox">Throttle: 1700 RPM
+  </div>
+    
+    <div x-show="!stuff[33]">
+    <input x-model="stuff[33]" type="checkbox">Magnetos: Check Lt and Rt
+  </div>
+    <p style="color: red"> NOTE:</p>
+    <h4>max drop during mag check is 125 <br>
+    RPM withib 50 RPM of each other</h4>
+<br>
+
+    
+    <div x-show="!stuff[34]">
+    <input x-model="stuff[34]" type="checkbox">Stuff Carberator Heat: On, Check<br>operation, then Off
+  </div>
+    
+    <div x-show="!stuff[35]">
+    <input x-model="stuff[35]" type="checkbox">Engine Instruments: In Green
+  </div>
+    
+    <div x-show="!stuff[36]">
+    <input x-model="stuff[36]" type="checkbox">Ammeter: 
+Check
+  </div>
+    
+    <div x-show="!stuff[37]">
+    <input x-model="stuff[37]" type="checkbox">Suction Guage: Green Arc
+  </div>
+    
+    <div x-show="!stuff[38]">
+    <input x-model="stuff[38]" type="checkbox">Throttle: 800-1000 RPM
+  </div>
+    
+    <div x-show="!stuff[39]">
+    <input x-model="stuff[39]" type="checkbox">Throttle friction lock: adjust
+  </div>
+    
+    <div x-show="!stuff[40]">
+    <input x-model="stuff[40]" type="checkbox">Flight Controls: Free & Correct
+  </div>
+    
+    <div x-show="!stuff[41]">
+    <input x-model="stuff[41]" type="checkbox">Doors and Windows: Secure
+  </div>
+    
+    <div x-show="!stuff[42]">
+    <input x-model="stuff[42]" type="checkbox">Transponder: Proper Code <br>
+      and select ALT
+  </div>
+    
+    <div x-show="!stuff[43]">
+    <input x-model="stuff[43]" type="checkbox"> <br> 
+      Landing Ligh As Req...Sunset to<br>
+      Sunrise
+  </div>
+    
+    <div x-show="!stuff[44]">
+    <input x-model="stuff[44]" type="checkbox">Pitot Heat: As Required
+  </div>
+    
+    <br/>
+    <br/>
+    <h1 style="color: blue" > At TakeOff</h1>
+
+       <div x-show="!stuff[45]">
+    <input x-model="stuff[45]" type="checkbox">Wing Flaps: 0 degrees normal<br> 10 degrees soft field
+  </div>
+       <div x-show="!stuff[46]">
+    <input x-model="stuff[46]" type="checkbox">Throttle: Set Full Power
+  </div>
+    
+       <div x-show="!stuff[47]">
+    <input x-model="stuff[47]" type="checkbox">Mixture RICH: lean above 3000'
+  </div>
+    
+       <div x-show="!stuff[48]">
+    <input x-model="stuff[48]" type="checkbox">Airspeed: Rotate at 55 knots
+  </div>
+    
+       <div x-show="!stuff[48]">
+    <input x-model="stuff[48]" type="checkbox">Climb Speed: Vy 73 knots<br>Vx 59 knots
+  </div>
+
+    <br><br>
+<h1 style="color: blue">Climb</h1>
+
+       <div x-show="!stuff[49]">
+    <input x-model="stuff[49]" type="checkbox">Throttle: Full Speed
+  </div>
+    
+    <div x-show="!stuff[50]">
+      <input x-model="stuff[50]" type="checkbox">Mixture: Rich, Lean above 3000
+    </div>  
+    
+    <div x-show="!stuff[51]">
+      <input x-model="stuff[51]" type="checkbox">Trim: Set for Climb
+    </div>  
+    
+    <div x-show="!stuff[52]">
+      <input x-model="stuff[52]" type="checkbox">Airspeed: Vx 59 knots<br>Vy 73 Knots
+    </div>  
+    
+    <div x-show="!stuff[52]">
+      <input x-model="stuff[52]" type="checkbox">Cruise Climb: 80 knots
+    </div>  
+    
+<br><br>
+
+<h1 style="color: blue">Cruise</h1>
+
+    <div x-show="!stuff[53]">
+      <input x-model="stuff[53]" type="checkbox">Throttle: 2200-2450 RPM
+    </div>  
+    
+    <div x-show="!stuff[54]">
+      <input x-model="stuff[54]" type="checkbox">Trim: Set
+    </div>  
+    
+    <div x-show="!stuff[55]">
+      <input x-model="stuff[55]" type="checkbox">Landing Light: 
+Off
+    </div>  
+    
+    <div x-show="!stuff[56]">
+      <input x-model="stuff[56]" type="checkbox">Mixture: Lean above 3000'
+    </div>  
+
+<br><br>
+<h1 style = "color:blue">Descent</h1>
+    
+    <div x-show="!stuff[57]">
+      <input x-model="stuff[57]" type="checkbox">ATIS: Listen amd Copy
+    </div>  
+    
+    <div x-show="!stuff[58]">
+      <input x-model="stuff[58]" type="checkbox">Altimer: Set
+    </div>  
+    
+    <div x-show="!stuff[59]">
+      <input x-model="stuff[59]" type="checkbox">Throttle: Set as required
+    </div>  
+    
+    <div x-show="!stuff[60]">
+      <input x-model="stuff[60]" type="checkbox">Carberetor Heat: As required
+    </div>  
+    
+    <div x-show="!stuff[62]">
+      <input x-model="stuff[62]" type="checkbox">Trim: As Required
+    </div>  
+    
+    <div x-show="!stuff[63]">
+      <input x-model="stuff[63]" type="checkbox">Mixture: Rich as Required
+    </div>  
+    
+    <div x-show="!stuff[64]">
+      <input x-model="stuff[64]" type="checkbox">Fuel Selector: On Both
+    </div>  
+    
+    <div x-show="!stuff[65]">
+      <input x-model="stuff[65]" type="checkbox">Avionics: Set
+    </div>
+    
+<br><br>
+<h1 style="color:blue">Before Landing</h1>
+
+    <div x-show="!stuff[66]">
+      <input x-model="stuff[66]" type="checkbox">Seats,seat belts: Secure
+    </div>  
+    
+    <div x-show="!stuff[67]">
+      <input x-model="stuff[67]" type="checkbox">Fuel Selector: Both
+    </div>  
+    
+    <div x-show="!stuff[68]">
+      <input x-model="stuff[68]" type="checkbox">Mixture: Rich
+    </div>  
+    
+    <div x-show="!stuff[69]">
+      <input x-model="stuff[69]" type="checkbox">CArburetor Heat: On as<br> Required
+    </div>  
+    
+    <div x-show="!stuff[70]">
+      <input x-model="stuff[70]" type="checkbox">Landing Light: As Required
+    </div>  
+    
+  <br><br>
+    <h1 style="color:blue">Go Around</h1>
+
+    <div x-show="!stuff[71]">
+      <input x-model="stuff[71]" type="checkbox">Throttle: Full Power
+    </div>  
+    
+    <div x-show="!stuff[72]">
+      <input x-model="stuff[72]" type="checkbox">Carburetor Heat: Off
+    </div>  
+    
+    <div x-show="!stuff[73]">
+      <input x-model="stuff[73]" type="checkbox">Flaps: IMMEDIATELY 20 degrees
+    </div>  
+    
+    <div x-show="!stuff[74]">
+      <input x-model="stuff[74]" type="checkbox">Climb Speed: 55 knots
+    </div>  
+    
+    <div x-show="!stuff[75]">
+      <input x-model="stuff[75]" type="checkbox">Flaps up once obstacles clear
+    </div>  
+    
+  <br><br>
+  <h1 style="color: blue">Landing</h1>
+
+    <div x-show="!stuff[76]">
+      <input x-model="stuff[76]" type="checkbox">Flaps 10 degrees: Below 110 Knots
+    </div>  
+    
+    <div x-show="!stuff[77]">
+      <input x-model="stuff[77]" type="checkbox">Flaps Full: Below 85 Knots
+    </div>  
+    
+    <div x-show="!stuff[78]">
+      <input x-model="stuff[78]" type="checkbox">Normal App: 65 Knots
+    </div>  
+    
+    <div x-show="!stuff[79]">
+      <input x-model="stuff[79]" type="checkbox">Touchdown: On mainwheels <br> first, lower nose gently
+    </div>  
+    
+    <div x-show="!stuff[80]">
+      <input x-model="stuff[80]" type="checkbox">Braking: Minimum required
+    </div>  
+    
+  <br><br>
+<h1 style="color:blue"> After Landing</h1>
+  
+    <div x-show="!stuff[81]">
+      <input x-model="stuff[81]" type="checkbox">Flaps: Up
+    </div>  
+    
+    <div x-show="!stuff[82]">
+      <input x-model="stuff[82]" type="checkbox">Carburetor Heat: Off
+    </div>  
+    
+    <div x-show="!stuff[83]">
+      <input x-model="stuff[83]" type="checkbox">Landing Light: Off
+    </div>  
+    
+    <div x-show="!stuff[84]">
+      <input x-model="stuff[84]" type="checkbox">Strobe Lights: Off
+    </div>  
+    
+    <br><br>  
+    <h1 style="color:blue">Shutdown</h1>
+  
+    <div x-show="!stuff[85]">
+      <input x-model="stuff[85]" type="checkbox">Avionics Master: Off
+    </div>  
+    
+    <div x-show="!stuff[86]">
+      <input x-model="stuff[86]" type="checkbox">Throttle: 800-1000 RPM
+    </div>  
+    
+    <div x-show="!stuff[87]">
+      <input x-model="stuff[87]" type="checkbox">Mixture: Idle Cut-Off
+    </div>  
+    
+    <div x-show="!stuff[88]">
+      <input x-model="stuff[88]" type="checkbox">Magnetos: Off-Key on Dash
+    </div>  
+    
+    <div x-show="!stuff[89]">
+      <input x-model="stuff[89]" type="checkbox">Master Switch: Off
+    </div>  
+    
+    <div x-show="!stuff[90]">
+      <input x-model="stuff[90]" type="checkbox">Control Wheel Lock: Install
+    </div>  
+    
+    <div x-show="!stuff[91]">
+      <input x-model="stuff[91]" type="checkbox">Record Hobbs, Tach on invoice
+    </div>  
+  
+  <div x-show="!stuff[92]">
+      <input x-model="stuff[92]" type="checkbox">Tie Downs: Install
+    </div>    
+
+<h3 style="color:Lime"> Bergstorm Aircraft, Inc. <br> 4102 Stearman Drive<br>
+  Pasco Washington, 99301<br> (509) 547-6271 (800) 746-6271 
+</h3>
+  
+  
+</div>
+
+
+
+
+
+
+</body>
+
+</html>
